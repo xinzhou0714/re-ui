@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <el-button type="primary" @click.prevent="show">Primary</el-button>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -104,11 +105,16 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   props: {
-    msg: String,
+    msg: String
   },
-};
+  methods: {
+    show: function () {
+      this.$message('Message')
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
