@@ -9,7 +9,7 @@ import locale from 'element-ui/lib/locale/lang/en'
 
 Vue.config.productionTip = false
 
-Vue.use(ElementUI, { size: 'small', locale: locale })
+Vue.use(ElementUI, { size: 'medium', locale: locale })
 
 new Vue({
   router,
